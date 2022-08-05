@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Tipography*/
+
+h1,
+h2,
+h3{
+    font-family: 'Loras', serif;
+    font-weight: 400;
+    color: #143774;
+    
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.article-title{
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info{
+    font-size: 0.875rem;
+}
+
+/*Layout*/
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header{
+    background-color: pink;
+    padding: 2em 0;
+
+}
+
+/*Navigation*/
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin: 0 1em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #1792d2;
+}
+
+
+@media screen and (max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: 0.5em 0;
+    }
+}
+
+
+
+

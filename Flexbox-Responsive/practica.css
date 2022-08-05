@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main{
+    flex-grow: 1;
+}
+
+.titulares{
+    padding: 1rem;
+    background-color: #222;
+    color: #eee;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.hero-image{
+    min-height: 100vh;
+    background-image: url("https://placeimg.com/1440/720/tech");
+    background-repeat: no-repeat;
+    color: #fff;
+    
+}
+
+.hero-image div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .menu ul{
+        display: flex;
+    }
+
+    .menu li{
+        padding: 0.5rem;
+    }
+}

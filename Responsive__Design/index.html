@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" media="print" href="print.css"> -->
+</head>
+<body>
+
+    <!--CONTENEDORES-->
+    <h2>Contenedores Flexibles</h2>
+    <div class="box-flexible"></div>
+    <div class="box-flexible-2"></div>
+    <div class="box-flexible-3"></div>
+    <div class="box-flexible-4"></div>
+
+    <hr>
+    <!--IMAGENES-->
+    <h2>Imagenes Responsivas</h2>
+    <img src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2022/07/12/la-nasa-revela-una-pequena-porcion-del-universo-con-la-primera-imagen-del-webb.jpeg" alt="NASA Image">
+
+    <h3>Atributo scrset</h3>
+    <img src="html5-3d-600.png" srcset="html5-3d-600.png 1x, html5-3d-900.png 1.5x, html5-3d-1200.png 2x" alt="HTML5">
+    <br>
+
+    <img src="html5-3d-600.png" srcset="html5-3d-600.png 600w, html5-3d-900.png 900w, html5-3d-1200.png 1200w" alt="HTML5">
+    <br>
+
+    <h3>Atributo sizes</h3>
+    <img src="html5-3d-600.png" srcset="html5-3d-600.png 600w, html5-3d-900.png 900w, html5-3d-1200.png 1200w" sizes="(max-width: 480px) 300px, (max-width: 600px) 480px, (max-width: 768px) 600px, (max-width: 1024px) 900px, (min-width: 1200px) 1200px" alt="HTML5">
+    <br>
+
+    <h3>Etiqueta Picture</h3>
+    <picture>
+        <source srcset="kitten-large.png" media="(min-width: 1024px)">
+        <source srcset="kitten-medium.png" media="(min-width: 600px)">
+        <img src="kitten-small.png" alt="Small Cat">
+    </picture>
+
+    <br>
+    <picture>
+        <source srcset="butterfly.webp" type="image/webp">
+        <img src="butterfly.jpg" alt="Mariposa">
+    </picture>
+
+    <hr>
+
+    <!--VIDEOS-->
+
+    <h2>Videos Responsivos</h2>
+    <video src="kenai.mp4" controls></video>
+    <div class="responsive-media">
+        <video src="kenai.mp4" controls></video>
+    </div>
+    
+    <video class="aspect-ratio-16-9" src="kenai.mp4" controls></video>
+
+    <!--IFRAMES-->
+    <h2>Iframes Responsivos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/udGrXWeJp1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div class="responsive-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/udGrXWeJp1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+    
+    <iframe class="aspect-ratio-16-9" width="560" height="315" src="https://www.youtube.com/embed/udGrXWeJp1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br>
+    <iframe class="aspect-ratio-1-1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29867.77091131092!2d-103.38304!3d20.6503936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1658598912916!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+    <!---RESPONSIVE GRID-->
+    <h2>Responsive Grid</h2>
+    <section class="row">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 1</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 2</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 3</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 4</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 5</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 6</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 7</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 8</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 9</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 10</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 11</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 12</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 13</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 14</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 15</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 16</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 17</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 18</article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Elemento 19</article>
+    </section>
+
+    <article id="fluid-design">
+        <h3>Ejemplos Fluid Design</h3>
+        <h4>Grid Fluida</h4>
+        <section class="fluid-grid">
+            <article class="fluid-item">Elemento 1</article>
+            <article class="fluid-item">Elemento 2</article>
+            <article class="fluid-item">Elemento 3</article>
+            <article class="fluid-item">Elemento 4</article>
+            <article class="fluid-item">Elemento 5</article>
+            <article class="fluid-item">Elemento 6</article>
+            <article class="fluid-item">Elemento 7</article>
+            <article class="fluid-item">Elemento 8</article>
+            <article class="fluid-item">Elemento 9</article>
+            <article class="fluid-item">Elemento 10</article>
+            <article class="fluid-item">Elemento 11</article>
+            <article class="fluid-item">Elemento 12</article>
+            <article class="fluid-item">Elemento 13</article>
+            <article class="fluid-item">Elemento 14</article>
+            <article class="fluid-item">Elemento 15</article>
+            <article class="fluid-item">Elemento 16</article>
+            <article class="fluid-item">Elemento 17</article>
+            <article class="fluid-item">Elemento 18</article>
+            <article class="fluid-item">Elemento 19</article>
+        </section>
+
+        <h4>Textos Fluidos</h4>
+        <p class="step--2">Step -2</p>
+        <p class="step--1">Step -1</p>
+        <p class="step-0">Step 0</p>
+        <p class="step-1">Step 1</p>
+        <p class="step-2">Step 2</p>
+        <p class="step-3">Step 3</p>
+        <p class="step-4">Step 4</p>
+        <p class="step-5">Step 5</p>
+
+
+        <h4>Contenedores Fluidos</h4>
+        <div class="box-fluid"></div>
+
+    </article>
+
+    <a href="prueba.html" target="_blank">Ir a enlace</a>
+
+    
+
+    
+</body>
+</html>

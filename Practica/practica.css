@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: steelblue;
+}
+
+
+.header__links ul{
+    display: flex;
+    list-style: none;
+}
+
+.header__link{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* main{
+    padding-top: 4rem;
+}
+ */

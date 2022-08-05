@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 0.25rem;
+    height: calc(4rem - 1px);
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    
+}
+
+header a{
+    margin: 0 1rem;
+    color: #00d4cd;
+}
+
+header a:hover{
+    color: #e94bb4;
+}
+
+img{
+    max-width: 50%;
+    height: auto;
+}
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
+    background-color: #1e2345;
+}
+
+.slide:nth-child(even){
+    background-color: #00d4cd;
+}
+
+[id]{
+    scroll-margin-top: 8ex;
+}
